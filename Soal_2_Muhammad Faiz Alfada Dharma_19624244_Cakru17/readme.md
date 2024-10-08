@@ -1,6 +1,6 @@
 1. class Robot
 class ini berfungsi untuk mendefinisikan robot, atributnya, dan metode menyerang dan bertahan.
-- Atribut:
+- atribut
     id: untuk ID robot.
     name: Nama robot (str)
     health: HP robot (int)
@@ -14,7 +14,7 @@ class ini berfungsi untuk mendefinisikan robot, atributnya, dan metode menyerang
 
 2. class Battle
 class ini berfungsi untuk mengatur pertarungan robot
-- Atribut yang didefinisikan adalah robot_a dan robot_b, yaitu dua instance yang mewakili robot bertarung 
+- atribut yang didefinisikan adalah robot_a dan robot_b, yaitu dua robot yang akan ikut bertarung
 - Fungsi
     a. begin_battle(robot_a, robot_b) = digunakan untuk mengumumkan dimulainya pertarungan antar robot dan menampilkan nama robot yang bertarung.
     b. updateStatus(robot_a, robot_b, df) = Memperbarui DataFrame (df) untuk menampilkan health dan status robot (hidup atau mati).
@@ -41,8 +41,8 @@ class ini berfungsi untuk mengatur alur pertarungan robot.
         health robot sebelum bertarung diatur menjadi 100 untuk setiap robot
     c. df:
         data frame yang berisi data-data robot yaitu:
-            Kolom: id, nama (nama), health, dan alive.
-            Baris: tiga robot dengan id 1, 2, dan 3, initial health adalah 100 dan semuanya masih berstatus hidup / alive.
+            Kolom = id, nama (nama), health, dan alive.
+            Baris = tiga robot dengan id 1, 2, dan 3, initial health adalah 100 dan semuanya masih berstatus hidup / alive.
 
 5. Running program
     Program dimulai dengan memanggil Game.add_robot() yang akan meminta untuk memulai pertarungan.
